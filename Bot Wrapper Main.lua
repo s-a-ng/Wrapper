@@ -89,7 +89,7 @@ function Bot:Launch(PlaceId, JobId)
     setmetatable( a, self)
     self.__index = self
 
-    a.NewAccountSignalEvent = Instance.new("BindableEvent") -- cum
+    a.NewAccountSignalEvent = Instance.new("BindableEvent") 
     a.NewAccountSignal = a.NewAccountSignalEvent.Event
 
     a.UserId = AskServerTwoWay("NewBot", {
